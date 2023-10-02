@@ -1,0 +1,142 @@
+.app__specialMenu {
+  flex-direction: column;
+  background: var(--color-black);
+}
+
+.app__specialMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app__specialMenu-menu {
+  width: 100%;
+  margin: 2rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.app__specialMenu-menu_heading {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.app__specialMenu-menu_wine,
+.app__specialMenu-menu_cocktails {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__specialMenu-menu_img {
+  width: 410px;
+  margin: 0 2rem;
+}
+
+.app__specialMenu-menu_img img {
+  width: 100%;
+  height: auto;
+}
+
+.app__specialMenu_menu_items {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__specialMenu-menu_img {
+    width: 650px;
+  }
+
+  .app__specialMenu-menu_img img {
+    height: 920px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__specialMenu-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .app__specialMenu-menu_img {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__specialMenu-menu_img {
+    width: 100%;
+  }
+
+  .app__specialMenu-menu_heading {
+    font-size: 35px;
+    line-height: 48.5px;
+  }
+}
+
+.radiogroup{
+  display: flex;
+  margin-right: 10px;
+  font-size: 30px;
+}
+  label{
+    padding-left: 45px;
+  }
+
+
+  .radiogroup input[type="radio"] {
+    appearance: none; /* Hide default radio button appearance */
+    -webkit-appearance: none;
+    width: 25px; /* Set the width and height of the custom radio button */
+    height: 25px;
+    border-radius: 50%; /* Make it a circle */
+    border: 2px solid #333; /* Add border to simulate the circle */
+    margin-right: 5px; /* Adjust spacing as needed */
+  }
+  
+  .radiogroup input[type="radio"]:checked {
+    background-color: #89802f; /* Change background color when selected */
+  }
+
+
+  .radiocity{
+    margin-bottom: 70px;
+    margin-top: 70px;
+    
+  }
+
+  input.radcity[type="radio"]:checked{
+    background-color: rgb(54, 48, 226);
+  }
+
+  .inputss{
+    margin-top: 25px;
+  }
+
+  input[type="text"], select {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: #e1d5d5;
+  }
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    /* background: url('dropdown-arrow.png') no-repeat right center;
+    background-size: 20px; */
+  }
